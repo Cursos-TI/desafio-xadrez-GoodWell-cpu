@@ -5,27 +5,27 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 int main() {
     int casas = 0; //contador de casas movidas
-    int totalcasas = 5; //total de casas a serem movidas
+    int bispo = 5; //total de casas a serem movidas
+    int casas1 = 0; 
+    int torre = 5; 
+    int casas3 = 0; 
+    int rainha = 8; 
 
-    //Movendo o bispo para Cima Direita
-    while (casas < totalcasas) {
+    //Movimento do Bispo
+    while (casas < bispo) {
         printf("Bispo: Cima, Direita \n"); //Direçao do movimento
-        casas++; // Incrementa o contador de casas
+        casas++; 
     }
 
-    int casas1 = 0; // contador de casas movidas
-    int totalcasas1 = 5; // Total de casas a serem movidas
-
+    //Movimento da Torre
     do {
         printf("Torre: Direita \n"); //Direçao do movimento 
-        casas1++; //incrementa o contador de casas
-    } while (casas1 < totalcasas1); //continua ate mover 5 casas
+        casas1++; 
+    } while (casas1 < torre); 
 
     
-    int casas3 = 0; // contador de casas movidas
-    int totalcasas2 = 8; // Total de casas a serem movidas
-    
-    for (int i = 0; i < totalcasas2; i++) //incrementa o contador de casas
+   //Movimento da Rainha
+    for (int i = 0; i < rainha; i++) 
     {
        printf("Rainha: Esquerda \n"); //Direçao do movimento
     }
